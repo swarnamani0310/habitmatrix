@@ -120,12 +120,14 @@ st.markdown("""
         font-size: 1rem !important;
         transition: all 0.3s ease !important;
         background: #f8fafc !important;
+        color: #1a1a2e !important;
     }
     
     .stTextInput input:focus, .stNumberInput input:focus {
         border-color: #667eea !important;
         box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.2), 0 0 20px rgba(102, 126, 234, 0.3) !important;
         background: white !important;
+        color: #1a1a2e !important;
         transform: scale(1.01);
     }
     
@@ -155,6 +157,11 @@ st.markdown("""
         transition: all 0.3s ease;
         cursor: pointer;
         display: block;
+        color: #1a1a2e !important;
+    }
+    
+    .stRadio > div > label > div {
+        color: #1a1a2e !important;
     }
     
     .stRadio > div > label:hover {
@@ -234,6 +241,15 @@ st.markdown("""
         border-radius: 12px !important;
         color: white !important;
         transition: all 0.3s ease;
+    }
+    
+    /* Selectbox text color fix for dark mode */
+    .stSelectbox > div > div {
+        color: #1a1a2e !important;
+    }
+    
+    .stSelectbox [data-baseweb="select"] {
+        color: #1a1a2e !important;
     }
     
     section[data-testid="stSidebar"] .stSelectbox > div > div:hover,
