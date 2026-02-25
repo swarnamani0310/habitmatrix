@@ -670,24 +670,25 @@ def main_app():
                 </div>
                 """, unsafe_allow_html=True)
                 
-                # Use Streamlit containers for content sections
-                with st.container():
-                    st.markdown(f"""
-                    <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
-                                padding: 2rem; border-radius: 20px; margin: 1rem 0; color: white;'>
-                        <h3 style='color: white; margin-top: 0;'>🧠 Why You Got This Result:</h3>
-                        <p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['desc']}</p>
-                        
-                        <h3 style='color: white; margin-top: 1.5rem;'>🔥 Your Core Strength:</h3>
-                        <p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['strength']}</p>
-                        
-                        <h3 style='color: white; margin-top: 1.5rem;'>⚠️ Your Hidden Weakness:</h3>
-                        <p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['weakness']}</p>
-                        
-                        <h3 style='color: white; margin-top: 1.5rem;'>🎵 Your Vibe:</h3>
-                        <p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['vibe']}</p>
-                    </div>
-                    """, unsafe_allow_html=True)
+                # Display profile results
+                st.markdown("""
+                <div style='background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+                            padding: 2rem; border-radius: 20px; margin: 1rem 0;'>
+                """, unsafe_allow_html=True)
+                
+                st.markdown("<h3 style='color: white; margin-top: 0;'>🧠 Why You Got This Result:</h3>", unsafe_allow_html=True)
+                st.markdown(f"<p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['desc']}</p>", unsafe_allow_html=True)
+                
+                st.markdown("<h3 style='color: white; margin-top: 1.5rem;'>🔥 Your Core Strength:</h3>", unsafe_allow_html=True)
+                st.markdown(f"<p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['strength']}</p>", unsafe_allow_html=True)
+                
+                st.markdown("<h3 style='color: white; margin-top: 1.5rem;'>⚠️ Your Hidden Weakness:</h3>", unsafe_allow_html=True)
+                st.markdown(f"<p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['weakness']}</p>", unsafe_allow_html=True)
+                
+                st.markdown("<h3 style='color: white; margin-top: 1.5rem;'>🎵 Your Vibe:</h3>", unsafe_allow_html=True)
+                st.markdown(f"<p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['vibe']}</p>", unsafe_allow_html=True)
+                
+                st.markdown("</div>", unsafe_allow_html=True)
                 
                 # Show happy image at the end
                 if os.path.exists("happy.jpg"):
