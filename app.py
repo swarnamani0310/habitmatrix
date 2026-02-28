@@ -676,17 +676,17 @@ def main_app():
                             padding: 2rem; border-radius: 20px; margin: 1rem 0;'>
                 """, unsafe_allow_html=True)
                 
-                st.markdown("<h3 style='color: white; margin-top: 0;'>🧠 Why You Got This Result:</h3>", unsafe_allow_html=True)
-                st.markdown(f"<p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['desc']}</p>", unsafe_allow_html=True)
+                st.markdown("<h3 style='color: #ffffff; margin-top: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);'>🧠 Why You Got This Result:</h3>", unsafe_allow_html=True)
+                st.markdown(f"<p style='color: #ffffff; font-size: 1.1rem; line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);'>{profile['desc']}</p>", unsafe_allow_html=True)
                 
-                st.markdown("<h3 style='color: white; margin-top: 1.5rem;'>🔥 Your Core Strength:</h3>", unsafe_allow_html=True)
-                st.markdown(f"<p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['strength']}</p>", unsafe_allow_html=True)
+                st.markdown("<h3 style='color: #ffffff; margin-top: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);'>🔥 Your Core Strength:</h3>", unsafe_allow_html=True)
+                st.markdown(f"<p style='color: #ffffff; font-size: 1.1rem; line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);'>{profile['strength']}</p>", unsafe_allow_html=True)
                 
-                st.markdown("<h3 style='color: white; margin-top: 1.5rem;'>⚠️ Your Hidden Weakness:</h3>", unsafe_allow_html=True)
-                st.markdown(f"<p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['weakness']}</p>", unsafe_allow_html=True)
+                st.markdown("<h3 style='color: #ffffff; margin-top: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);'>⚠️ Your Hidden Weakness:</h3>", unsafe_allow_html=True)
+                st.markdown(f"<p style='color: #ffffff; font-size: 1.1rem; line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);'>{profile['weakness']}</p>", unsafe_allow_html=True)
                 
-                st.markdown("<h3 style='color: white; margin-top: 1.5rem;'>🎵 Your Vibe:</h3>", unsafe_allow_html=True)
-                st.markdown(f"<p style='color: white; font-size: 1.1rem; line-height: 1.6;'>{profile['vibe']}</p>", unsafe_allow_html=True)
+                st.markdown("<h3 style='color: #ffffff; margin-top: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);'>🎵 Your Vibe:</h3>", unsafe_allow_html=True)
+                st.markdown(f"<p style='color: #ffffff; font-size: 1.1rem; line-height: 1.6; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);'>{profile['vibe']}</p>", unsafe_allow_html=True)
                 
                 st.markdown("</div>", unsafe_allow_html=True)
                 
